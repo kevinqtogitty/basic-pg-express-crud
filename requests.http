@@ -1,0 +1,26 @@
+POST http://localhost:3001/todos
+Content-Type: application/json
+
+{
+    "description": "I need to clean my car!"
+}
+
+###
+GET http://localhost:3001/todos
+Content-Type: application/json
+
+###
+GET http://localhost:3001/todos/2
+Content-Type: application/json
+
+###
+DELETE http://localhost:3001/todos/2
+Content-Type: application/json
+
+###
+PUT http://localhost:3001/todos/2
+Content-Type: application/json
+
+{
+    "description": "The car has been cleaned"
+}
